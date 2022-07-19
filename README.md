@@ -268,7 +268,7 @@ committed : commit이 완료된 상태 -   repository에 반영된 상태
 untracked 파일이 modified 상태로 됩니다.
 
 modified - 깃이 관리하며, 최신인 상태
-
+  
 ---
 
 ### ※staging area를 활용하는 이유
