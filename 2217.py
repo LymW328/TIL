@@ -1,3 +1,6 @@
-words = ["round", "dream", "magnet", "tweet", "trick", "kiwi"]
-for i in words:
-    i
+words = ["kiwi", "intergral", "leader", "read"]
+res = []
+L = len(words)
+for word in words:
+    res.append(word[-1])
+    if res[]
