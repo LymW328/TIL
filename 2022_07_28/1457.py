@@ -1,3 +1,7 @@
+# words = ["round","dream","magnet","tweet","tweet","trick","kiwi"]
+# print(wordrelay(words)) # 5번째 참가자가 탈락하였습니다.
+
+
 
 class Fee():
     def __init__(self, time, distance):
@@ -14,6 +18,8 @@ class Fee():
     def get_total_insurance(self):
         if self.time == 50:
             self.time = 60
+        else:
+            pass
         return self.time / 30 * 525
 
     
@@ -24,11 +30,11 @@ class Fee():
         return self.distance * 170
 
 
-    def get_fee(self):
+    def get_fee(self): #이렇게 매직 메서드를 작성하거나
         return self.get_total_rental() + self.get_total_insurance() + self.get_total_drive()
 
 
 if __name__ == '__main__':
     time, distance = map(int, input('렌탈비용과 주행거리를 띄워쓰기로 구분하여 입력하세요 : ').split())
     fee_instance = Fee(time, distance)
-    
+    print(fee_instance) # 이것 대신 print(fee_instance.get_fee())사용
